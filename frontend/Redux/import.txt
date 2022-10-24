@@ -1,0 +1,40 @@
+
+
+1.create-store file
+2.store file ke amra index file e link korbo
+3.create reducers folder
+4.productReducer er link import korte hobe store file e
+5.constant folder create korbo
+6.actions folder create korbo
+7.actions flie er modder constant file gulo import korte hobe
+8.action er function gulo store file save korte hove
+9.Data gulo implement korbo HomeScreen file er modder
+   a.import { useDispatch,useSelector } from 'react-redux' korbo
+   b.import { listProduct } from '../../Redux/actions/productActions'
+   c. const dispatch = useDispatch();
+     const List = useSelector(state =>state.productList);
+     const {loading,error,products}  = List 
+
+     ekhane loading, error, products ei productAction er bitore productList theke astache, ei name gula productList er name er sathe mil thakte hobe
+
+
+
+10.single product show korar jonno 
+ 
+    a. productConstant file giye again constant banate hobe
+    b.abar single product er jonno productReducer file e reducers create korte    hobe
+    c.single product er jono je reducers banalam akhon seta store file import korte hobe
+    d.single product er jonno abar productAction er abar action create korte hobe
+    e.abar action file er single product jonno function ta store file import korbo
+    5.ProductDetails file data use korbo
+
+
+11.cart jonno korbo
+
+    a.abar constant file create korbo
+    b.abar cartReducer file create korbo
+
+*** loacal storage jodi use kori tale
+   1.action file local Storage set korte hobe (example:userAction)
+   2.store file import korte hobe storage er jonno alada
+   3.store file  er initalState jaygay assign korte hobe
